@@ -13,8 +13,9 @@ class App extends Component {
     this.removeItem = this.removeItem.bind(this);
   }
 
-  addToList ({ title, link }) {
-    const favorites = this.state.favorites.concat({ title, link });
+  addToList ({ title, fullLink }) {
+    console.log(fullLink);
+    const favorites = this.state.favorites.concat({ title, link: fullLink });
     this.setState({ favorites });
   }
 
