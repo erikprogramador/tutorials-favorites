@@ -15,6 +15,10 @@ class AddLink extends Component {
   addToList (event) {
     event.preventDefault();
     this.props.addToList(this.state);
+    this.setState({
+      title: '',
+      link: ''
+    });
   }
 
   render () {
