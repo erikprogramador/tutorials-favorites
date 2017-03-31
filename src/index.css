@@ -1,5 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-color: #dadada;
+}
+
+.title {
+  text-align: center;
+  margin: 1em 0 1.2em;
+}
+
+.container {
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 1em 0;
+}
+
+.box-form {
+  margin: 0 auto;
+  padding: 1em;
+  background-color: #fafafa;
+  border-radius: 3px;
+}
+
+.input {
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid blue;
+  flex: 1;
+  padding: .7em;
+  font-size: 1rem;
+}
+
+.input:focus {
+  border-bottom: 2px solid red;
+}
+
+.select {
+  padding: .9em .7em;
+  border: none;
+  outline: none;
+  background-color: #fafafa;
+  border-bottom: 2px solid blue;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fafafa;
+  margin: .8em 0;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.button {
+  border: none;
+  outline: none;
+  background-color: #ebebeb;
+  display: block;
+  width: 100%;
+  padding: .7em;
+}
+
+.no-favorites {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+  width: 100%;
+  height: 100%;
+}
+
+.container-list {
+  margin-top: 2em;
+  list-style: none;
+}
+
+.item {
+  background-color: #fafafa;
+  width: 100%;
+  padding: 1.5em 1em;
+  border-radius: 3px;
+  position: relative;
+  margin-bottom: 1em;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: .7em 1em;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  color: #666666;
+}
+
+.content h3 {
+  margin-top: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.content a {
+  width: 100%;
+  display: block;
+  padding: 1em 0 0;
+  text-align: right;
+  color: orange;
+  text-decoration: none;
+  text-transform: uppercase;
 }

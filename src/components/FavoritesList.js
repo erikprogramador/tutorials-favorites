@@ -9,7 +9,7 @@ class FavoritesList extends Component {
   render () {
     if (this.props.favorites.length <= 0) {
       return (
-        <div>
+        <div className="no-favorites">
           <h3>No Favorites!</h3>
         </div>
       );
@@ -17,11 +17,11 @@ class FavoritesList extends Component {
 
     return (
       <div>
-        <ul>
+        <ul className="container-list">
           {this.props.favorites.map((favorite, key) =>
-            <li key={key}>
-              <button onClick={this.removeItem.bind(this, favorite)}>X</button>
-              <div>
+            <li key={key} className="item">
+              <button className="close" onClick={this.removeItem.bind(this, favorite)}>X</button>
+              <div className="content">
                 <h3>{favorite.title}</h3>
                 <a href={favorite.link} target="_blank">Go To</a>
               </div>

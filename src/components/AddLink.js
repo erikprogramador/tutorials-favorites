@@ -32,15 +32,18 @@ class AddLink extends Component {
 
   render () {
     return (
-      <form onSubmit={this.addToList}>
-        {this.state.fullLink}
-        <input type="text" placeholder="Tutotial Title" onChange={({ target }) => this.setState({ title: target.value }) } value={this.state.title} />
-        <select value={this.state.selectItem} onChange={({ target }) => this.setState({ selectItem: target.value }) }>
-          <option value="https://">https://</option>
-          <option value="http://">http://</option>
-        </select>
-        <input type="text" placeholder="Tutotial Link" onChange={({ target }) => this.setState({ link: target.value }) } value={this.state.link} />
-        <button type="submit">Add Link</button>
+      <form onSubmit={this.addToList} className="box-form">
+        <div className="form-group">
+          <input type="text" className="input" placeholder="Tutotial Title" onChange={({ target }) => this.setState({ title: target.value }) } value={this.state.title} />
+        </div>
+        <div className="form-group">
+          <select className="select" value={this.state.selectItem} onChange={({ target }) => this.setState({ selectItem: target.value }) }>
+            <option value="https://">https://</option>
+            <option value="http://">http://</option>
+          </select>
+          <input type="text" className="input" placeholder="Tutotial Link" onChange={({ target }) => this.setState({ link: target.value }) } value={this.state.link} />
+        </div>
+        <button type="submit" className="button">Add Link</button>
       </form>
     );
   }
